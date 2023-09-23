@@ -1,0 +1,10 @@
+[Unit]
+Description=DDE File Manager Server
+
+[Service]
+Type=dbus
+BusName=org.deepin.filemanager.server
+ExecStart=/usr/bin/dde-file-manager-server
+
+[Install]
+WantedBy=graphical-session.target
